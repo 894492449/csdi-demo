@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.message-box{
+    z-index: 100;
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    border-radius: 5px;
+}
+.message-close{
+    float: right;
+    cursor: pointer;
+}
+.message-title{
+    float: left;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.message-content{
+    clear: both;
+    width: 400px;
+    height: 120px;
+    text-align: left;
+    font-size: 14px;
+}
+.message-footer{
+    float: right;
+}
+.message-footer button{
+    width: 70px;
+    height: 40px;
+    outline: none;
+    border: 1px solid rgb(196,196,196);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+}
+button.btn{
+    outline: none;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    border: 1px solid rgb(196,196,196);
+    cursor: pointer;
+}
+button.confirm{
+    background-color: rgb(77,179,255);
+    color: #fff;
+}
+button.cancel{
+    margin-left: 10px;
+    background-color: #fff
+}
+button.cancel:hover{
+    border-color: rgb(32,160,255);
+}
+
+div.error,button.error{
+    color: rgb(255,73,73);
+}
+div.info,button.info{
+    color: rgb(19,206,102);
+}
+div.log,button.log{
+    color: rgb(80,190,255);
+}
+div.warn,button.warn{
+    color: rgb(247,188,49);
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        top: 45%;
+        opacity: 0;
+        display: none;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+        display: block;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        top: 50%;
+        opacity: 1;
+        display: block;
+    }
+    to {
+        top: 45%;
+        opacity: 0;
+        display: none;
+    }
+}
+
+
